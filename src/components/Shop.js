@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export class Shop extends Component {
   render() {
-    const items =this.props;
+    const items =this.props.item;
     const theItem=items.map(item=>{
         return (
             <article>
