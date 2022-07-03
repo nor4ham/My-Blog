@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+
+.div{
+    background:linear-gradient(  rgb(56, 14, 56) ,rgb(81, 28, 81) ) ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+  
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+header{
+    position: fixed;
+    width: 90%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 30px;
+
+}
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 30px;
+}
+header ul li {
+    margin-right: 30PX;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover,.active{
+background: white;
+color: rgb(109, 68, 132) ;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background:linear-gradient( to top,#471647,transparent) ;
+}
+.main img{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#hores{
+    width:  30%;
+    transform: translateX(90%);
+  
+
+    
+}
+#moon{
+    mix-blend-mode: screen;
+}
+.norah{
+    color:white;
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+.content{
+    color:white;
+    padding: 30px;
+}
+.content h2{
+    margin:20px;
+    font-size: 30px;
+}
+.content p{
+    margin:20px;
+}
+
+
+
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    }
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  }
+  .grid > article img {
+    max-width: 100%;
+  }
+  .text {
+    padding: 0 20px 20px;
+  }
+  .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+
